@@ -1,0 +1,122 @@
+*{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 15px;
+    margin: 0;
+}
+body{
+    background-color: hsl(210, 46%, 95%);
+}
+h2{
+    font-size: 20px;
+}
+.container{
+    margin: 10%;
+    display: grid;
+    grid-gap: 2%;
+    grid-template-areas: "c1 c1 c1 c2 c5"
+                         "c3 c4 c4 c4 c5"
+                    
+}
+.card1{
+    grid-area: c1;
+    background-color: hsl(263, 55%, 52%);
+    background-image: url('../images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position: 80% 15%; 
+    border-radius: 10px;
+    color: white;
+    padding: 4%;
+    display: flex;
+    flex-flow: row wrap;  
+}
+.card2{
+    grid-area: c2;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 10px;
+    color: white;
+    padding: 6%;
+    display: flex;
+    flex-flow: row wrap;  
+}
+.card3{
+    grid-area: c3;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    box-shadow: 9px 9px 15px 0px rgba(50, 50, 50, 0.3);
+    padding: 6%;
+    display: flex;
+    flex-flow: row wrap;  
+}
+.card4{
+    grid-area: c4;
+    background-color:hsl(219, 29%, 14%);
+    border-radius: 10px;
+    color: white;
+    padding: 4%;
+    display: flex;
+    flex-flow: row wrap;  
+}
+.card5{
+    grid-area: c5;
+    background-color:  hsl(0, 0%, 100%);
+    border-radius: 10px;
+    box-shadow: 9px 9px 15px 0px rgba(50, 50, 50, 0.3);
+    padding: 6%;
+    display: flex;
+    flex-flow: row wrap;  
+}
+.photo-profile{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 1%;
+}
+.name-profile{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-top: 1%;
+    padding-left: 2%;
+}
+.opacity{
+    opacity: 0.5;
+    align-self: baseline;
+}
+.title{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.attribution{
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+a, a:visited{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+@media (max-width: 950px){
+
+    .container{
+        display: grid;
+        grid-gap: 2%;
+        grid-template-areas: "c1"
+                             "c1"
+                             "c2"
+                             "c2"
+                             "c3"
+                             "c3"
+                             "c4"
+                             "c4"
+                             "c5"
+                             "c5"
+                        
+    }
+    .attribution{
+       display: none;
+    }
+}
